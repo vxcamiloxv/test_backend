@@ -61,16 +61,6 @@ class VehicleController extends Controller
             'data' => $vehicle
         ], 200);
     }
-    /**
-     * Update the specified vehicle.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function update($id)
-    {
-        //
-    }
 
     /**
      * Remove the specified vehicle.
