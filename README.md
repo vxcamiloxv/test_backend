@@ -6,7 +6,7 @@
 - PHP 5.4+
 - NPM 2.14 or higher
 - Composer 1.0.0 or higher
-- Sqlite3
+- MySQL or Sqlite3
 
 ## Install
 
@@ -21,6 +21,17 @@ composer install
 Copy and modify .env
 ```shell
 cp .env.example .env
+```
+
+Copy and modify .env
+```shell
+cp .env.example .env
+```
+
+Create or update database scheme
+```shell
+php artisan migrate
+
 ```
 
 ## Usage
