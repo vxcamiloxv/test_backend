@@ -2,15 +2,6 @@
 
 @section('content')
 
-  {{-- <h1>Car {{ $vehicle->id }}</h1>
-  <ul>
-  <li>User: {{ $vehicle->make }}</li>
-  <li>Plate: {{ $vehicle->plate }}</li>
-  <li>Model: {{ $vehicle->model }}</li>
-  <li>Brand: {{ $vehicle->brand }}</li>
-  </ul> --}}
-
-
   <div class="panel-body">
     @include('errors/validator')
 
@@ -19,17 +10,17 @@
       {{ csrf_field() }}
 
       <div class="form-group">
-        <label for="task" class="col-sm-3 control-label">Task</label>
+        <label for="vehicle" class="col-sm-3 control-label">Vehicle</label>
 
         <div class="col-sm-6">
-          <input type="text" name="name" id="task-name" class="form-control">
+          <input type="text" name="name" id="vehicle-plate" class="form-control">
         </div>
       </div>
 
       <div class="form-group">
         <div class="col-sm-offset-3 col-sm-6">
           <button type="submit" class="btn btn-default">
-            <i class="fa fa-plus"></i> Add Task
+            <i class="fa fa-plus"></i> Add Vehicle
           </button>
         </div>
       </div>
